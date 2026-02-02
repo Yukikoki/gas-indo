@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gas Industri | PT Asia Gasindo Energy</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="bisnis.css" />
+  <script src="business-script.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      <a href="../index.html#business">
+        <img src="../image/logo_jpg.png" alt="Company Logo" />
+      </a>
+    </div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="../index.html#home">Home</a></li>
+        <li><a href="../index.html#project">Display</a></li>
+        <li><a href="../index.html#business">Bisnis</a></li>
+        <li><a href="../index.html#team">Team</a></li>
+        <li><a href="../index.html#news">News</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+        <li><a href="../index.html#maps">Maps</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- DESKRIPSI BISNIS -->
+  <section class="business-detail">
+    <h1>SPECIALTY & MIXED GAS ENGINEERING</h1>
+  </section>
+
+  <!-- ISI BERITA -->
+  <main class="news-detail">
+    <p class="meta">Published on October 28, 2025 | Category: CSR</p>
+    <p>Mixed Gas</p>
+
+    <p>Campuran dua atau lebih gas untuk aplikasi khusus.</p>
+
+    <p>Nama Campuran Komposisi Kegunaan</p>
+
+    <p>Armix Argon + CO₂ Campuran pelindung dalam pengelasan MIG untuk baja karbon (memberi hasil las halus dan kuat).
+    </p>
+
+    <p>Heliox Helium + Oksigen Campuran pernapasan untuk penyelaman dalam laut atau terapi pernapasan di rumah sakit.
+    </p>
+
+    <p>Compressed Air O₂ + N₂ (udara terkompresi) Digunakan untuk alat pneumatik, pembersihan industri, dan sistem
+      kontrol.</p>
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="footer" class="footer">
+    <div class="footer-container">
+
+      <!-- KOLOM 1 — INFO PERUSAHAAN -->
+      <div class="footer-column">
+        <img src="../image/logo_jpg.png" alt="Company Logo" class="footer-logo" />
+        <p>
+          Jl. Soekarno Hatta RT.042 RW.005, Talang Kelapa, Alang-Alang,<br />
+          Kota Palembang, Sumatera Selatan
+        </p>
+        <p>📞 +62 82279765959</p>
+        <p>📧 official.asiagasindoenergy@gmail.com</p>
+
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <!-- KOLOM 2 — MENU -->
+      <div class="footer-column">
+        <h3>Menu</h3>
+        <ul class="footer-links">
+          <li><a href="#project">Project</a></li>
+          <li><a href="#business">Bisnis</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- KOLOM 3 — TENTANG -->
+      <div class="footer-column">
+        <h3>Tentang</h3>
+        <ul class="footer-links">
+          <li><a href="#">Profil Perusahaan</a></li>
+          <li><a href="#">Galeri</a></li>
+          <li><a href="#">Peta Lokasi</a></li>
+          <li><a href="#">Hubungi Kami</a></li>
+        </ul>
+      </div>
+
+      <!-- KOLOM 4 — LAYANAN -->
+      <div class="footer-column layanan">
+        <h3>Layanan Kami</h3>
+        <ul class="footer-links">
+          <li><a href="#">Distribusi LPG & Gas Industri</a></li>
+          <li><a href="#">Pengadaan Peralatan Gas</a></li>
+          <li><a href="#">Konsultasi Sistem Gas</a></li>
+          <li><a href="#">Instalasi & Maintenance Jaringan Gas</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 PT Asia Gasindo Energy. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- FADE TRANSITION -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const reveals = document.querySelectorAll(".reveal");
+
+      function revealOnScroll() {
+        const windowHeight = window.innerHeight;
+
+        reveals.forEach(el => {
+          const elementTop = el.getBoundingClientRect().top;
+          if (elementTop < windowHeight - 80) {
+            el.classList.add("active");
+          }
+        });
+      }
+
+      revealOnScroll();
+      window.addEventListener("scroll", revealOnScroll);
+    });
+  </script>
+  <script src="script.js"></script>
+</body>
+
+</html>

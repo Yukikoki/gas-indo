@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PT Asia Gasindo Energy</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      <img src="image/logo_jpg.png" alt="Company Logo" />
+    </div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#project">Display</a></li>
+        <li><a href="#business">Bisnis</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#maps">Maps</a></li>
+      </ul>
+    </nav>
+    <div class="menu-toggle" id="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+  </header>
+  <main>
+    <!-- SLIDER -->
+    <section id="home" class="slider">
+      <div class="slides">
+        <div class="slide active">
+          <img src="image/gas_5.jpg" alt="slide 1" />
+          <div class="grid-overlay"></div>
+          <div class="text-overlay">
+            <h1>INNOVATION & TECHNOLOGY</h1>
+            <p>For a Sustainable Future</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="https://i.pinimg.com/1200x/17/30/8f/17308f51e1d45f270b08bcee909855dc.jpg" alt="slide 2" />
+          <div class="grid-overlay"></div>
+          <div class="text-overlay">
+            <h1>INTEGRATED SOLUTION</h1>
+            <p>Engineering • Procurement • Construction</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="https://i.pinimg.com/1200x/dc/c3/86/dcc38643a716e2b0cf018d78abf96330.jpg" alt="slide 3" />
+          <div class="grid-overlay"></div>
+          <div class="text-overlay">
+            <h1>GLOBAL EXPERIENCE</h1>
+            <p>Delivering World-Class Projects</p>
+          </div>
+        </div>
+      </div>
+      <!-- Navigasi -->
+      <span class="prev">&#10094;</span> <span class="next">&#10095;</span>
+      <!-- Bullet Indicators -->
+      <div class="indicators">
+        <span class="dot active"></span> <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </section>
+    <!-- PROJECT COMPLETION -->
+    <section id="project" class="products">
+      <h2>PRODUCTS</h2>
+
+      <div class="product-slider-wrapper">
+        <button class="slider-btn left" id="slideLeft">&#10094;</button>
+
+        <div class="product-slider" id="productSlider">
+          <!-- CARD -->
+          <div class="product-card">
+            <img src="image/product1.jpg" alt="Oxygen Industrial">
+            <h3>OXYGEN INDUSTRIAL</h3>
+          </div>
+
+          <div class="product-card">
+            <img src="image/product2.jpg" alt="Nitrogen Gas">
+            <h3>NITROGEN GAS</h3>
+          </div>
+
+          <div class="product-card">
+            <img src="image/product3.jpg" alt="Liquid CO2">
+            <h3>LIQUID CO₂</h3>
+          </div>
+
+          <div class="product-card">
+            <img src="image/product4.jpg" alt="Argon Gas">
+            <h3>ARGON GAS</h3>
+          </div>
+
+          <div class="product-card">
+            <img src="image/product5.jpg" alt="Mixed Gas">
+            <h3>MIX GAS</h3>
+          </div>
+        </div>
+
+        <button class="slider-btn right" id="slideRight">&#10095;</button>
+      </div>
+    </section>
+
+    <!-- BISNIS -->
+    <section id="business" class="business">
+      <h2>BISNIS</h2>
+      <div class="business-container">
+        <div class="business-card">
+          <a href="business/bisnis1.html">
+            <img src="image/bisnis3.jpg" alt="Refinery Oil & Gas" />
+            <div class="overlay">
+              <div class="overlay-inner">
+                <h3>GAS INDUSTRI</h3>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="business-card">
+          <a href="business/bisnis2.html">
+            <img src="image/special_gas.jpg" alt="" />
+            <div class="overlay">
+              <div class="overlay-inner">
+                <h3>SPECIAL GAS</h3>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="business-card">
+          <a href="business/bisnis3.html">
+            <img src="image/gas_6.png" alt="Petrochemical & Overseas" />
+            <div class="overlay">
+              <div class="overlay-inner">
+                <h3>MIX GAS</h3>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- TEAM -->
+    <section id="team" class="team">
+      <h2>OUR TEAM</h2>
+      <div class="team-container">
+        <div class="team-member">
+          <div class="team-photo">
+            <img src="image/kkpero8.jpg" alt="piero" />
+            <div class="overlay-bio">
+              <h3>PIERO EDWIN VALENTINO</h3>
+              <p>DIREKTUR UTAMA</p>
+            </div>
+          </div>
+        </div>
+        <div class="team-member">
+          <div class="team-photo">
+            <img src="image/didik.jpg" alt="didik" />
+            <div class="overlay-bio">
+              <h3>DIDIK UTOMO</h3>
+              <p>DIREKTUR OPERASIONAL</p>
+              </p>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- NEWS -->
+    <section id="news" class="news">
+      <h2>NEWS</h2>
+      <div class="news-container">
+        <div class="news-card">
+          <a href="news1.html" class="news-link">
+            <img src="image/berita2.jpg" alt="News 1" />
+            <div class="news-content">
+              <h3>
+                PT Asia Gasindo Energy Jalin Kerjasama Strategis dengan PT Fortuna Laju Selaras dan PT Fortuna Marina
+                Sejahtera di Palembang
+              </h3>
+              <p>
+                PT Asia Gasindo Energy Jalin Kerjasama Strategis dengan PT Fortuna Laju Selaras dan PT Fortuna Marina
+                Sejahtera
+                di
+                Palembang
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="news-card">
+          <a href="news2.html" class="news-link">
+            <img src="image/bisnis2_2.jpg" alt="News 2" />
+            <div class="news-content">
+              <h3>PT Asia Gasindo Energy Jalani kerjasama dengan RS Namira Palembang</h3>
+              <p>
+                PT ASIA GASINDO ENERGY Perkuat Kemitraan Sektor Kesehatan, Jalin Kerja Sama Gas Medis dengan RS NAMIRA
+                Palembang
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="news-card">
+          <a href="news3.html" class="news-link">
+            <img src="image/HUAYE1.jpg" alt="News 3" />
+            <div class="news-content">
+              <h3>
+                Perusahaan Gasindo Energy resmi menjalani kerjasama dengan PT Huaye Industrial Engineering
+              </h3>
+              <p>
+                Pada Senin, 27 Oktober 2025 di Palembang, PT Asia Gasindo Energy menjalin kerja sama strategis dengan PT
+                Huaye
+                Industrial Engineering, perusahaan pengolahan laterit nikel dengan metode hidrometalurgi di Air Sugihan,
+                Ogan
+                Komering Ilir, Sumatera Selatan.
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- ===== CONTACT FORM SECTION ===== -->
+  <section id="contact" class="contact">
+    <h2>Hubungi Kami</h2>
+    <form action id="contactForm" class="contact-form">
+      <input type="text" name="name" placeholder="Nama Anda" required />
+      <input type="email" name="email" placeholder="Email Anda" required />
+      <textarea name="message" placeholder="Pesan Anda" required></textarea>
+      <button type="submit">Kirim Pesan</button>
+    </form>
+  </section>
+  <!-- ===== MAP SECTION (DILUAR CONTACT) ===== -->
+  <section id="maps" class="maps-section">
+    <h2>Lokasi Kami</h2>
+    <div id="map"></div>
+  </section>
+  <!-- FOOTER -->
+  <footer id="footer" class="footer">
+    <div class="footer-container">
+
+      <!-- KOLOM 1 — INFO PERUSAHAAN -->
+      <div class="footer-column">
+        <img src="image/logo_jpg.png" alt="Company Logo" class="footer-logo" />
+        <p>
+          Jl. Soekarno Hatta RT.042 RW.005, Talang Kelapa, Alang-Alang,<br />
+          Kota Palembang, Sumatera Selatan
+        </p>
+        <p>📞 +62 82279765959</p>
+        <p>📧 official.asiagasindoenergy@gmail.com</p>
+
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <!-- KOLOM 2 — MENU -->
+      <div class="footer-column">
+        <h3>Menu</h3>
+        <ul class="footer-links">
+          <li><a href="#project">Project</a></li>
+          <li><a href="#business">Bisnis</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- KOLOM 3 — TENTANG -->
+      <div class="footer-column">
+        <h3>Tentang</h3>
+        <ul class="footer-links">
+          <li><a href="#">Galeri</a></li>
+          <li><a href="#maps">Peta Lokasi</a></li>
+          <li><a href="#contact">Hubungi Kami</a></li>
+        </ul>
+      </div>
+
+      <!-- KOLOM 4 — LAYANAN -->
+      <div class="footer-column layanan">
+        <h3>Layanan Kami</h3>
+        <ul class="footer-links">
+          <li><a href="#">Distribusi LPG & Gas Industri</a></li>
+          <li><a href="#">Pengadaan Peralatan Gas</a></li>
+          <li><a href="#">Konsultasi Sistem Gas</a></li>
+          <li><a href="#">Instalasi & Maintenance Jaringan Gas</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 PT Asia Gasindo Energy. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script>
+    emailjs.init("nqw4uw4jEGt8SUuEr");
+
+    const form = document.getElementById("contactForm");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      emailjs.sendForm("service_ay8ntvm", "template_c9q3xnp", this)
+        .then(() => {
+          alert("✅ Email berhasil dikirim!");
+          form.reset();
+        })
+        .catch(err => {
+          alert("❌ Gagal mengirim email!");
+          console.error("Error:", err);
+        });
+    });
+  </script>
+</body>
+
+</html>

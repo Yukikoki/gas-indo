@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Berita 3</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="news.css" />
+  <script src="news-script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<header>
+  <div class="logo">
+    <a href="index.html#news">
+      <img src="image/logo_jpg.png" alt="Company Logo" />
+    </a>
+  </div>
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="index.html#project">Display</a></li>
+      <li><a href="index.html#business">Bisnis</a></li>
+      <li><a href="index.html#team">Team</a></li>
+      <li><a href="index.html#news">News</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+      <li><a href="index.html#maps">Maps</a></li>
+    </ul>
+  </nav>
+</header>
+
+<body>
+  <section class="news-detail reveal">
+    <h1 class="news-title">
+      Perusahaan Gasindo Energy resmi menjalani kerjasama dengan PT Huaye Industrial Engineering
+    </h1>
+
+    <div class="meta"><i class="fa fa-calendar"></i> October 27 2025</div>
+
+    <img src="image/HUAYE1.jpg" alt="Berita Minyak dan Gas" class="news-image" />
+  </section>
+
+  <!-- Isi Berita -->
+  <main class="news-detail reveal">
+    <p class="meta">Published on October 27 2025 | Category: CSR</p>
+    <p>Pada Senin, 27 Oktober 2025 di Palembang, PT Asia Gasindo Energy menjalin kerja sama strategis dengan PT Huaye
+      Industrial Engineering, perusahaan pengolahan laterit nikel dengan metode hidrometalurgi di Air Sugihan, Ogan
+      Komering Ilir, Sumatera Selatan.</p>
+
+    <p>Melalui perjanjian ini, Asia Gasindo Energy akan menjadi penyedia utama gas industri bagi Huaye Industrial
+      Engineering guna mendukung operasional pabrik pengolahan nikel.</p>
+
+    <p>Direktur Utama Asia Gasindo Energy, Piero Edwin Valentino, menyatakan kerja sama ini memperluas peran perusahaan
+      dalam mendukung energi bersih dan efisien bagi industri pengolahan mineral.
+      Sementara itu, Mr. Tang Wae (Way Tom) selaku Direktur Huaye Industrial Engineering menegaskan bahwa pasokan energi
+      gas yang stabil sangat penting bagi proses hidrometalurgi yang membutuhkan efisiensi tinggi.</p>
+
+    Kerja sama ini diharapkan menjadi tonggak pengembangan industri nikel di Sumatera Selatan dan berkontribusi pada
+    hilirisasi mineral nasional serta pembangunan industri yang berkelanjutan dan ramah lingkungan.
+  </main>
+
+  <footer id="footer" class="footer">
+    <div class="footer-container">
+
+      <!-- KOLOM 1 — INFO PERUSAHAAN -->
+      <div class="footer-column">
+        <img src="image/logo_jpg.png" alt="Company Logo" class="footer-logo" />
+        <p>
+          Jl. Soekarno Hatta RT.042 RW.005, Talang Kelapa, Alang-Alang,<br />
+          Kota Palembang, Sumatera Selatan
+        </p>
+        <p>📞 +62 82279765959</p>
+        <p>📧 official.asiagasindoenergy@gmail.com</p>
+
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <!-- KOLOM 2 — MENU -->
+      <div class="footer-column">
+        <h3>Menu</h3>
+        <ul class="footer-links">
+          <li><a href="#project">Project</a></li>
+          <li><a href="#business">Bisnis</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- KOLOM 3 — TENTANG -->
+      <div class="footer-column">
+        <h3>Tentang</h3>
+        <ul class="footer-links">
+          <li><a href="#">Profil Perusahaan</a></li>
+          <li><a href="#">Galeri</a></li>
+          <li><a href="#">Peta Lokasi</a></li>
+          <li><a href="#">Hubungi Kami</a></li>
+        </ul>
+      </div>
+
+      <!-- KOLOM 4 — LAYANAN -->
+      <div class="footer-column layanan">
+        <h3>Layanan Kami</h3>
+        <ul class="footer-links">
+          <li><a href="#">Distribusi LPG & Gas Industri</a></li>
+          <li><a href="#">Pengadaan Peralatan Gas</a></li>
+          <li><a href="#">Konsultasi Sistem Gas</a></li>
+          <li><a href="#">Instalasi & Maintenance Jaringan Gas</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 PT Asia Gasindo Energy. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <script>
+    document.querySelectorAll('a[href^="index.html#"]').forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetUrl = this.getAttribute('href');
+        document.body.style.opacity = 0;
+        document.body.style.transition = 'opacity 0.3s ease';
+        setTimeout(() => {
+          window.location.href = targetUrl;
+        }, 200);
+      });
+    });
+  </script>
+  <script src="script.js"></script>
+</body>
+
+</html>
